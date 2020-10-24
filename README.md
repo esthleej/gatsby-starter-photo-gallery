@@ -22,13 +22,13 @@ Here is the live **[demo](https://gatsby-starter-photo-gallery.netlify.app/)**.
 1. Create two Contentful Models
 
    Contentful Model: Website
-   ![Content Model Website](https://github.com/esthleej/gatsby-starter-photo-gallery/tree/master/src/images/contenful-content-model/website.png)
+   ![Content Model Website](https://github.com/esthleej/gatsby-starter-photo-gallery/blob/master/src/images/contentful-content-model/website.png)
 
    - The `title` and `description` is used for React Helmet to dynamically set up page title and SEO.
    - `Instagram` and `Email` is added for social media and contact info - more can be added or removed as needed.
 
    Contentful Model: Post
-   ![Content Model Post](https://github.com/esthleej/gatsby-starter-photo-gallery/tree/master/src/images/contenful-content-model/post.png)
+   ![Content Model Post](https://github.com/esthleej/gatsby-starter-photo-gallery/blob/master/src/images/contentful-content-model/post.png)
    Currently, photos can be organized two levels deep.
 
    - `Main` determines whether or not your photo group is a main or sub category. If photo group is a sub category, you will add your entry under `Sub` when creating a main category `Post` entry.
