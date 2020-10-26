@@ -70,7 +70,7 @@ const Gallery = ({ images, title }) => {
         >
           code
         </a>
-        &nbsp;·
+        &nbsp;·&nbsp;
         <a
           href=' https://feathericons.com/'
           target='_blank'
@@ -78,7 +78,7 @@ const Gallery = ({ images, title }) => {
         >
           icons
         </a>
-        ·&nbsp;
+        &nbsp;·&nbsp;
         <a
           href='https://unsplash.com/'
           target='_blank'
