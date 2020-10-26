@@ -1,6 +1,6 @@
 # 🏙 Gatsby Starter Photo Gallery
 
-A simple photo gallery starter using Gatsby and Contentful.
+A simple responsive photo gallery starter using Gatsby and Contentful.
 
 Here is the live **[demo](https://gatsby-starter-photo-gallery.netlify.app/)**.
 
@@ -8,14 +8,20 @@ Here is the live **[demo](https://gatsby-starter-photo-gallery.netlify.app/)**.
 
 1. Fork and `npm install`.
 
-2. Create a `.env` file in your root directory:
+2. Create a `.env.development` and `.env.production` file in your root directory and add in the following:
 
    ```
    CONTENTFUL_SPACE_ID=YOUR_SPACE_ID
    CONTENTFUL_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
    ```
 
+Note: Space ID and access token can be found under in your [Contentful account](https://be.contentful.com/login) under `Settings -> API Keys`.
+
 3. `gatsby develop` to run site locally at `http://localhost:8000`.
+
+4. `gatsby build` to run a production build into ./public.
+
+5. `gatsby serve` to serve the production build of your site for testing at `http://localhost:9000`.
 
 ### 🔧 Contentful Configuration
 
@@ -38,6 +44,13 @@ Here is the live **[demo](https://gatsby-starter-photo-gallery.netlify.app/)**.
 
 3. And you're all set!
 
+## Note:
+
+- Image loading: Gatsby offers lazy-loading React image components through the plugin `gatsby-image`. The default blur-up effect has been removed (i.e., GatsbyContentfulFluid -> GatsbyContentfulFluid_noBase64). Add back or use other effects if desired.
+  To learn more about Gatsby Image, check out the following resources:
+  - [Information](https://www.gatsbyjs.com/plugins/gatsby-image/)
+  - [Demo](https://www.gatsbyjs.com/plugins/gatsby-image/)
+
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
@@ -51,3 +64,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import)
+
+Remember to add in environment varaibles when deploying (e.g., in Netlify -> Domain settings -> Build & deploy -> Environment).
