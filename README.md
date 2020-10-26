@@ -2,7 +2,7 @@
 
 A simple responsive photo gallery starter using Gatsby and Contentful.
 
-Here is the live **[demo](https://gatsby-starter-photo-gallery.netlify.app/)**.
+Here is the live **[demo](https://gatsby-starter-photo-gallery.netlify.app)**.
 
 ### 🚀 Getting Started
 
@@ -48,8 +48,8 @@ Note: Space ID and access token can be found under in your [Contentful account](
 
 - Image loading: Gatsby offers lazy-loading React image components through the plugin `gatsby-image`. The default blur-up effect has been removed (i.e., GatsbyContentfulFluid -> GatsbyContentfulFluid_noBase64). Add back or use other effects if desired.
   To learn more about Gatsby Image, check out the following resources:
-  - [Information](https://www.gatsbyjs.com/plugins/gatsby-image/)
-  - [Demo](https://www.gatsbyjs.com/plugins/gatsby-image/)
+  - [Information](https://www.gatsbyjs.com/plugins/gatsby-image)
+  - [Demo](https://using-gatsby-image.gatsbyjs.org)
 
 ## 🎓 Learning Gatsby
 
