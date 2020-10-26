@@ -16,6 +16,10 @@ const GalleryContainer = styled.div`
     margin: 0px;
   }
 
+  .credits {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+  }
+
   @media (max-width: ${(props) => props.theme.sizes.mobile}) {
     p {
       position: absolute !important;
@@ -57,11 +61,31 @@ const Gallery = ({ images, title }) => {
       <p>{title}</p>
       <PhotosContainer>{photos}</PhotosContainer>
 
-      <p>
-        <i>
-          Images were taken from&nbsp;
-          <a href='https://unsplash.com/'>Unsplash</a>.
-        </i>
+      <p className='credits'>
+        source&nbsp;
+        <a
+          href='https://github.com/esthleej/gatsby-starter-photo-gallery'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          code
+        </a>
+        &nbsp;·
+        <a
+          href=' https://feathericons.com/'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          icons
+        </a>
+        ·&nbsp;
+        <a
+          href='https://unsplash.com/'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          photos
+        </a>
       </p>
     </GalleryContainer>
   );
@@ -75,7 +99,6 @@ Gallery.defaultProps = {
       id: '',
       title: '',
       fluid: {
-        base64: '',
         aspectRatio: 0,
         src: '',
         srcSet: '',
@@ -91,7 +114,6 @@ Gallery.propTypes = {
       id: PropTypes.string,
       title: PropTypes.string,
       fluid: PropTypes.shape({
-        base64: PropTypes.string,
         aspectRatio: PropTypes.number,
         src: PropTypes.string,
         srcSet: PropTypes.string,

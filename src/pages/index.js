@@ -18,24 +18,16 @@ const IndexPage = ({ location }) => {
           photos {
             id
             title
-            fluid {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
+            fluid(quality: 100) {
+              ...GatsbyContentfulFluid_noBase64
             }
           }
           sub {
             photos {
               id
               title
-              fluid {
-                base64
-                aspectRatio
-                src
-                srcSet
-                sizes
+              fluid(quality: 100) {
+                ...GatsbyContentfulFluid_noBase64
               }
             }
           }

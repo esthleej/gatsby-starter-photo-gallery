@@ -33,7 +33,6 @@ PhotosPage.propTypes = {
           fluid: PropTypes.shape({
             src: PropTypes.string,
             srcSet: PropTypes.string,
-            base64: PropTypes.string,
             aspectRatio: PropTypes.number,
             sizes: PropTypes.string,
           }),
@@ -48,7 +47,6 @@ PhotosPage.propTypes = {
             fluid: PropTypes.shape({
               src: PropTypes.string,
               srcSet: PropTypes.string,
-              base64: PropTypes.string,
               aspectRatio: PropTypes.number,
               sizes: PropTypes.string,
             }),
@@ -73,12 +71,8 @@ export const photosQuery = graphql`
       photos {
         id
         title
-        fluid {
-          base64
-          aspectRatio
-          src
-          srcSet
-          sizes
+        fluid(quality: 100) {
+          ...GatsbyContentfulFluid_noBase64
         }
       }
       sub {
@@ -86,12 +80,8 @@ export const photosQuery = graphql`
         photos {
           id
           title
-          fluid {
-            base64
-            aspectRatio
-            src
-            srcSet
-            sizes
+          fluid(quality: 100) {
+            ...GatsbyContentfulFluid_noBase64
           }
         }
       }
