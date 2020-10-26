@@ -1,3 +1,9 @@
+/**
+ * Gatsby's Node APIs - used to dynamically create pages for each `Post` entry.
+ *
+ * To learn more, see https://www.gatsbyjs.com/docs/api-files-gatsby-node/
+ * and/or https://www.gatsbyjs.com/docs/node-apis/
+ */
 const path = require(`path`);
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -28,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allContentfulPost.edges.forEach(({ node }) => {
     if (node.sub) {
-      // generates page for each sub-categories using page.js
+      // To generate pages based on each sub `Post` entry using page.js
       node.sub.forEach(({ title, slug, id }, index) => {
         createPage({
           path: `/${node.slug}/${slug}`,
@@ -41,7 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
         });
       });
     } else {
-      // generates page for each main-categories using page.js
+      // To generate pages based on each main `Post` entry using page.js
       createPage({
         path: node.slug,
         component: path.resolve(`./src/templates/page.js`),

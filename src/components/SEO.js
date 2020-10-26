@@ -16,7 +16,7 @@ function SEO({ description, lang, meta, title, image }) {
   );
 
   const metaDescription = description || contentfulWebsite.description;
-  const metaTitle = contentfulWebsite.title || title;
+  const metaTitle = `${contentfulWebsite.title} ${title ? ` · ${title}` : ''}`;
 
   return (
     <Helmet
