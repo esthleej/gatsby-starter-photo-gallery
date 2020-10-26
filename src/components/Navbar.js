@@ -115,7 +115,7 @@ const Contact = styled.div`
   }
 
   img {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     :hover {
       opacity: 0.5;
     }
@@ -194,7 +194,12 @@ const NavBar = () => {
         <Link to='/' onClick={handleScrollToTop}>
           <h3>{title}</h3>
         </Link>
-        <HamburgerButton onClick={handleOpenMenu} type='submit' open={openMenu}>
+        <HamburgerButton
+          aria-label='menu'
+          onClick={handleOpenMenu}
+          type='submit'
+          open={openMenu}
+        >
           <div className='first' />
           <div className='second' />
         </HamburgerButton>
@@ -224,12 +229,13 @@ const NavBar = () => {
       </LinkContainer>
 
       <Contact>
-        <a href='www.instagram.com'>
+        <a href={instagram} target='_blank' rel='noreferrer noopener'>
           <img src={InstagramIcon} alt='instagram' />
         </a>
         <a href={`mailto:${email}`}>
           <img src={EmailIcon} alt='email' />
         </a>
+
         <p>&copy; {year}</p>
       </Contact>
     </NavbarContainer>
