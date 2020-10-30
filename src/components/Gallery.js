@@ -62,13 +62,12 @@ const Gallery = ({ images, title }) => {
       <PhotosContainer>{photos}</PhotosContainer>
 
       <p className='credits'>
-        source&nbsp;
         <a
           href='https://github.com/esthleej/gatsby-starter-photo-gallery'
           target='_blank'
           rel='noreferrer noopener'
         >
-          code
+          source code
         </a>
         &nbsp;·&nbsp;
         <a
