@@ -44,14 +44,14 @@ Note: Space ID and access token can be found under in your [Contentful account](
 
 3. And you're all set!
 
-## Note:
+### 📝 Note:
 
 - Image loading: Gatsby offers lazy-loading React image components through the plugin `gatsby-image`. The default blur-up effect has been removed (i.e., GatsbyContentfulFluid -> GatsbyContentfulFluid_noBase64). Add back or use other effects if desired.
   To learn more about Gatsby Image, check out the following resources:
-  - [Information](https://www.gatsbyjs.com/plugins/gatsby-image)
-  - [Demo](https://using-gatsby-image.gatsbyjs.org)
+  - [Gatsby Image](https://www.gatsbyjs.com/plugins/gatsby-image)
+  - [Examples](https://using-gatsby-image.gatsbyjs.org)
 
-## 🎓 Learning Gatsby
+### 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
@@ -59,7 +59,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+### 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
 
